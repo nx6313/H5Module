@@ -1,0 +1,522 @@
+.musicPlayWrap {
+	position: absolute;
+	top: 0.6rem;
+	right: 0.6rem;
+	z-index: 200;
+	width: 1rem;
+	height: 1rem;
+	background-image: url(../../resources/music.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.pageProgress {
+	position: absolute;
+	width: 100%;
+	height: 0.1rem;
+	bottom: 0rem;
+	background: none;
+}
+
+.pageProgress .layui-progress-bar {
+	height: 0.1rem;
+	border-radius: 0rem;
+	background-color: rgb(242, 104, 114);
+}
+
+.pre-wrap-bottom {
+	position: absolute;
+	bottom: 1rem;
+	left: calc(50% - 11px);
+	z-index: 150;
+	width: 22px;
+	height: 14px;
+	-webkit-animation: start 1.5s infinite ease-in-out;
+	animation: start 1.5s infinite ease-in-out;
+}
+
+.pre-wrap-bottom .pre-box1,
+.pre-wrap-bottom .pre-box2 {
+	height: 15px;
+	width: 14px;
+	position: absolute;
+	overflow: hidden;
+}
+
+.pre-wrap-bottom .pre-box2 {
+	left: 8px;
+}
+
+.pre-wrap-bottom .pre-box1 .pre1,
+.pre-wrap-bottom .pre-box2 .pre2 {
+	background-color: #fff;
+	width: 14px;
+	height: 5px;
+	border-radius: 2px;
+	position: absolute;
+	box-shadow: 1px -1px 1px #646464;
+	top: 5px;
+}
+
+.pre-wrap-bottom .pre-box1 .pre1 {
+	transform: rotate(130deg);
+	-webkit-transform: rotate(130deg);
+	left: 1px;
+}
+
+.pre-wrap-bottom .pre-box2 .pre2 {
+	-webkit-transform: rotate(50deg);
+	transform: rotate(50deg);
+}
+
+.pageItemWrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.pageItemWrap li.pageItem {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-origin: content-box;
+}
+
+/****************************************** 活动页H5样式开始 ******************************************/
+
+/****************** 第 1 页 ******************/
+
+/****** 背景图设置 ******/
+
+.pageItemWrap li.pageItem1 {
+	background-image: url('../../resources/bgs/01.jpg');
+}
+
+/****** 其他样式 - 页面元素 ******/
+
+.pageItemWrap li.pageItem1 .title {
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	width: 98%;
+}
+
+.pageItemWrap li.pageItem1 .footer {
+	position: absolute;
+	bottom: 40px;
+	left: 10px;
+	width: 94%;
+}
+
+.pageItemWrap li.pageItem1 .person_ts {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 150px;
+}
+
+/****************** 第 2 页 ******************/
+
+/****** 背景图设置 ******/
+
+.pageItemWrap li.pageItem2 {
+	background-image: url('../../resources/bgs/02.jpg');
+}
+
+/****** 其他样式 - 页面元素 ******/
+
+.pageItemWrap li.pageItem2 .title {
+	position: absolute;
+	top: 40px;
+	left: 20px;
+	width: 92%;
+}
+
+.pageItemWrap li.pageItem2 .footer {
+	position: absolute;
+	bottom: 40px;
+	right: 20px;
+	width: 60%;
+}
+
+.pageItemWrap li.pageItem2 .person_ts {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 150px;
+}
+
+.pageItemWrap li.pageItem2 .person_swk {
+	position: absolute;
+	height: 40%;
+	left: -26px;
+	top: 280px;
+}
+
+/****************** 第 3 页 ******************/
+
+/****** 背景图设置 ******/
+
+.pageItemWrap li.pageItem3 {
+	background-image: url('../../resources/bgs/03.jpg');
+}
+
+/****** 其他样式 - 页面元素 ******/
+
+.pageItemWrap li.pageItem3 .title {
+	position: absolute;
+	top: 30px;
+	left: 10px;
+	width: 80%;
+}
+
+.pageItemWrap li.pageItem3 .footer {
+	position: absolute;
+	bottom: 40px;
+	left: 10px;
+	width: 94%;
+}
+
+.pageItemWrap li.pageItem3 .person_ts {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 150px;
+}
+
+.pageItemWrap li.pageItem3 .person_swk {
+	position: absolute;
+	height: 40%;
+	left: -26px;
+	top: 280px;
+}
+
+.pageItemWrap li.pageItem3 .person_zbj {
+	position: absolute;
+	height: 40%;
+	right: -16px;
+	top: 280px;
+}
+
+/****************** 第 4 页 ******************/
+
+/****** 背景图设置 ******/
+
+.pageItemWrap li.pageItem4 {
+	background-image: url('../../resources/bgs/04.jpg');
+}
+
+/****** 其他样式 - 页面元素 ******/
+
+.pageItemWrap li.pageItem4 .title {
+	position: absolute;
+	top: -4px;
+	left: -20px;
+	width: 80%;
+}
+
+.pageItemWrap li.pageItem4 .footer {
+	position: absolute;
+	bottom: 40px;
+	left: 10px;
+	width: 94%;
+}
+
+.pageItemWrap li.pageItem4 .person_ts {
+	position: absolute;
+	width: 100%;
+	left: -50px;
+	top: 150px;
+}
+
+.pageItemWrap li.pageItem4 .person_swk {
+	position: absolute;
+	height: 40%;
+	left: -26px;
+	top: 280px;
+}
+
+.pageItemWrap li.pageItem4 .person_zbj {
+	position: absolute;
+	height: 40%;
+	right: -16px;
+	top: 280px;
+}
+
+.pageItemWrap li.pageItem4 .person_ss {
+	position: absolute;
+	height: 60%;
+	right: -30px;
+	top: 70px;
+}
+
+/****************** 第 5 页 ******************/
+
+/****** 背景图设置 ******/
+
+.pageItemWrap li.pageItem5 {
+	background-image: url('../../resources/bgs/05.jpg');
+}
+
+/****** 其他样式 - 页面元素 ******/
+
+.pageItemWrap li.pageItem5 .title {
+	position: absolute;
+	top: 20px;
+	left: 14px;
+	width: 70%;
+}
+
+.pageItemWrap li.pageItem5 .mapWrap {
+	position: absolute;
+	bottom: 30px;
+	right: 20px;
+	width: 300px;
+}
+
+.pageItemWrap li.pageItem5 .mapWrap .map_img {
+	width: 100%;
+	filter: invert(1);
+	-webkit-filter: invert(1);
+}
+
+.pageItemWrap li.pageItem5 .mapWrap canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	animation: fadeIn 4s ease 1.9s both;
+	-webkit-animation: fadeIn 4s ease 1.9s both;
+}
+
+.pageItemWrap li.pageItem5 .mapWrap em {
+	position: absolute;
+	background: url('../../resources/point.png') no-repeat center center;
+	background-size: 100%;
+	opacity: 0;
+}
+
+.pageItemWrap li.pageItem5 .mapWrap em::after {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	box-shadow: 0 0 1px 2px rgba(240, 216, 216, 0.8);
+	margin-top: -3px;
+	margin-left: -3px;
+	z-index: 3;
+	opacity: 0;
+	-webkit-animation: halo 1s 0.5s infinite ease-out;
+	-moz-animation: halo 1s 0.5s infinite ease-out;
+	animation: halo 1s 0.5s infinite ease-out;
+}
+
+em.datong {
+	animation: fadeIn-6 2s ease 1.9s both;
+	-webkit-animation: fadeIn-6 2s ease 1.9s both;
+	top: 50px;
+	right: 104px;
+	width: 14px;
+	height: 14px;
+}
+
+em.shuozhou {
+	animation: fadeIn-4 2s ease 1.2s both;
+	-webkit-animation: fadeIn-4 2s ease 1.2s both;
+	top: 124px;
+	left: 128px;
+	width: 14px;
+	height: 14px;
+}
+
+em.xinzhou {
+	animation: fadeIn-6 2s ease 0.8s both;
+	-webkit-animation: fadeIn-6 2s ease 0.8s both;
+	top: 194px;
+	left: 154px;
+	width: 14px;
+	height: 14px;
+}
+
+em.lvliang {
+	animation: fadeIn-5 2s ease 1s both;
+	-webkit-animation: fadeIn-5 2s ease 1s both;
+	top: 264px;
+	left: 68px;
+	width: 14px;
+	height: 14px;
+}
+
+em.yangquan {
+	animation: fadeIn-6 2s ease 0.6s both;
+	-webkit-animation: fadeIn-6 2s ease 0.6s both;
+	top: 248px;
+	right: 88px;
+	width: 14px;
+	height: 14px;
+}
+
+em.jinzhong {
+	animation: fadeIn-4 2s ease 0.2s both;
+	-webkit-animation: fadeIn-4 2s ease 0.2s both;
+	top: 250px;
+	right: 136px;
+	width: 10px;
+	height: 10px;
+}
+
+em.jinzhong::after {
+	width: 12px !important;
+	height: 12px !important;
+	margin-top: -1px !important;
+	margin-left: -1px !important;
+}
+
+em.linfen {
+	animation: fadeIn-6 2s ease 1.3s both;
+	-webkit-animation: fadeIn-6 2s ease 1.3s both;
+	bottom: 122px;
+	left: 80px;
+	width: 14px;
+	height: 14px;
+}
+
+em.changzhi {
+	animation: fadeIn-5 2s ease 1.4s both;
+	-webkit-animation: fadeIn-5 2s ease 1.4s both;
+	bottom: 122px;
+	right: 114px;
+	width: 14px;
+	height: 14px;
+}
+
+em.yuncheng {
+	animation: fadeIn-3 2s ease 1.8s both;
+	-webkit-animation: fadeIn-3 2s ease 1.8s both;
+	bottom: 44px;
+	left: 40px;
+	width: 14px;
+	height: 14px;
+}
+
+em.jincheng {
+	animation: fadeIn-6 2s ease 1.6s both;
+	-webkit-animation: fadeIn-6 2s ease 1.6s both;
+	bottom: 76px;
+	right: 132px;
+	width: 14px;
+	height: 14px;
+}
+
+em.taiyuan {
+	animation: fadeIn-8 2s ease 0s both;
+	-webkit-animation: fadeIn-8 2s ease 0s both;
+	top: 231px;
+	right: 136px;
+	width: 18px;
+	height: 18px;
+}
+
+em.taiyuan::after {
+	width: 20px !important;
+	height: 20px !important;
+	margin-top: -1px !important;
+	margin-left: -1px !important;
+}
+
+/****************** 第 6 页 ******************/
+
+/****** 背景图设置 ******/
+
+.pageItemWrap li.pageItem6 {
+	background-image: url('');
+	background-color: #E71A29;
+}
+
+/****** 其他样式 - 页面元素 ******/
+
+.pageItemWrap li.pageItem6 .content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 50px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding-bottom: 60px;
+}
+
+.pageItemWrap li.pageItem6 .content .headImg {
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+
+.pageItemWrap li.pageItem6 .content .mainContent {
+	position: relative;
+	margin: 0 auto;
+	width: calc(100% - 30px);
+	height: auto !important;
+	font-size: 0px;
+	z-index: 2;
+	margin-top: -90px;
+}
+
+.pageItemWrap li.pageItem6 .content .mainContent .main_top {
+	height: 20px;
+	background: url('../../resources/content_top_bg.png') no-repeat center center;
+	background-size: 100%;
+}
+
+.pageItemWrap li.pageItem6 .content .mainContent .main_footer {
+	height: 20px;
+	background: url('../../resources/content_foot_bg.png') no-repeat center center;
+	background-size: 100%;
+}
+
+.pageItemWrap li.pageItem6 .content .mainContent .main_middle {
+	background: url('../../resources/content_middle_bg.png') repeat-y center center;
+	background-size: 100%;
+	padding: 0 20px;
+	font-size: 14px;
+}
+
+.pageItemWrap li.pageItem6 .content .logo {
+	position: fixed;
+	bottom: 50px;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+	z-index: -1;
+}
+
+.pageItemWrap li.pageItem6 .content .mainContent .main_middle .gl_item {
+	text-align: center;
+}
+
+.pageItemWrap li.pageItem6 .content .mainContent .main_middle .gl_item img {
+	height: 40px;
+}
+
+.pageItemWrap li.pageItem6 .content .logo img {
+	height: 40px;
+}
+
+.pageItemWrap li.pageItem6 .footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: #FDC857;
+	color: #fff;
+}

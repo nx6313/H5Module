@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>集西游福卡，撞大运</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/weui.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="layui/css/layui.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/comm.css" />
+    <link rel="stylesheet" type="text/css" href="css/fkpagetransitions.css" />
+    <link rel="stylesheet" type="text/css" href="css/modules/dcxyk.css" />
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/weui.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/comm.js"></script>
+    <script type="text/javascript" src="js/fkpagetransitions.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax.js"></script>
+    <script>
+        layui.config({
+            base: 'modules/'
+        }).use('dcxyk');
+    </script>
+</head>
+
+<body>
+    <!-- <div class="musicPlayWrap rotate" onclick="layui.dcxyk('playMusicToggle', this)">
+        <audio loop="" src="http://res1.eqh5.com/store/7285452cf4e21fa679b8eee24168402a.mp3" autoplay="" preload=""></audio>
+    </div> -->
+    <ul class="pageItemWrap">
+        <li class="sceneGravity pageItem pageItem1">
+            <!-- 请在此处添加第 1 页代码 -->
+            <img class="title" src="resources/words/01-01.png">
+            <img class="person_ts layer" data-depth="0.04" src="resources/renwus/ts.png">
+            <img class="footer" src="resources/words/01-02.png">
+        </li>
+        <li class="sceneGravity pageItem pageItem2">
+            <!-- 请在此处添加第 2 页代码 -->
+            <img class="title" src="resources/words/02-01.png">
+            <img class="person_ts layer" data-depth="0.04" src="resources/renwus/ts.png">
+            <img class="person_swk layer" data-depth="0.08" src="resources/renwus/swk.png">
+            <img class="footer" src="resources/words/02-02.png">
+        </li>
+        <li class="sceneGravity pageItem pageItem3">
+            <!-- 请在此处添加第 3 页代码 -->
+            <img class="title" src="resources/words/03-01.png">
+            <img class="person_ts layer" data-depth="0.04" src="resources/renwus/ts.png">
+            <img class="person_swk layer" data-depth="0.08" src="resources/renwus/swk.png">
+            <img class="person_zbj layer" data-depth="0.07" src="resources/renwus/zbj.png">
+            <img class="footer" src="resources/words/03-02.png">
+        </li>
+        <li class="sceneGravity pageItem pageItem4">
+            <!-- 请在此处添加第 4 页代码 -->
+            <img class="title" src="resources/words/04-01.png">
+            <img class="person_ss layer" data-depth="0.06" src="resources/renwus/ss.png">
+            <img class="person_ts layer" data-depth="0.04" src="resources/renwus/ts.png">
+            <img class="person_zbj layer" data-depth="0.07" src="resources/renwus/zbj.png">
+            <img class="person_swk layer" data-depth="0.08" src="resources/renwus/swk.png">
+            <img class="footer" src="resources/words/04-02.png">
+        </li>
+        <li class="pageItem pageItem5">
+            <!-- 请在此处添加第 5 页代码 -->
+            <img class="title" src="resources/words/05.png">
+            <div class="mapWrap">
+                <img class="map_img" src="resources/map.png">
+                <em class="datong"></em>
+                <em class="shuozhou"></em>
+                <em class="xinzhou"></em>
+                <em class="lvliang"></em>
+                <em class="taiyuan"></em>
+                <em class="yangquan"></em>
+                <em class="jinzhong"></em>
+                <em class="linfen"></em>
+                <em class="changzhi"></em>
+                <em class="yuncheng"></em>
+                <em class="jincheng"></em>
+                <canvas id="map_cavs"></canvas>
+            </div>
+        </li>
+        <li class="pageItem pageItem6">
+            <!-- 请在此处添加第 6 页代码 -->
+            <div class="content touchIgnore">
+                <img class="headImg" src="resources/head.png">
+                <div class="mainContent">
+                    <div class="main_top"></div>
+                    <div class="main_middle">
+                        <div class="gl_item">
+                            <img src="resources/gl_1.png">
+                        </div>
+                        <div class="gl_item">
+                            <img src="resources/gl_2.png">
+                        </div>
+                        <div class="gl_item">
+                            <img src="resources/gl_3.png">
+                        </div>
+                    </div>
+                    <div class="main_footer"></div>
+                </div>
+                <div class="logo">
+                    <img src="resources/logo.png">
+                </div>
+            </div>
+            <div class="footer touchIgnore ripple">
+                <span>立即集卡分现金</span>
+            </div>
+        </li>
+    </ul>
+    <div class="pre-wrap-bottom">
+        <div class="pre-box1">
+            <div class="pre1"></div>
+        </div>
+        <div class="pre-box2">
+            <div class="pre2"></div>
+        </div>
+    </div>
+    <div class="pageProgress layui-progress" lay-filter="pageProgress">
+        <div class="layui-progress-bar" lay-percent="0%"></div>
+    </div>
+</body>
+
+</html>
