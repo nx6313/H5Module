@@ -229,3 +229,45 @@ var initSceneGravity = function (sceneGravityParams) {
         });
     }
 };
+
+var toastTimer = null;
+var Toast = function (content, delay) {
+    if (!document.getElementById('toastWrap')) {
+        var toastWrap = document.createElement('div');
+        toastWrap.id = "toastWrap";
+        toastWrap.style.position = 'absolute';
+        toastWrap.style.display = 'none';
+        toastWrap.style.width = '100%';
+        toastWrap.style.textAlign = 'center';
+        toastWrap.style.zIndex = '999999999999999999999999999999';
+        toastWrap.style.bottom = '40px';
+
+        var toastSpan = document.createElement('span');
+        toastSpan.style.background = '#313132';
+        toastSpan.style.color = '#FFFFFF';
+        toastSpan.style.padding = '6px 8px';
+        toastSpan.style.borderRadius = '3px';
+        toastWrap.appendChild(toastSpan);
+
+        document.body.appendChild(toastWrap);
+    }
+    document.getElementById('toastWrap').getElementsByTagName('span')[0].innerHTML = content;
+
+    this.show = function () {
+        if (toastTimer != null) {
+            clearTimeout(toastTimer);
+        }
+        if (document.getElementById('toastWrap')) {
+            $(document.getElementById('toastWrap')).stop().fadeIn();
+            var delayTime = 2000;
+            if (delay && delay > 2000) {
+                delayTime = delay;
+            }
+            toastTimer = setTimeout(function () {
+                $(document.getElementById('toastWrap')).stop().fadeOut(function () {
+                    document.getElementById('toastWrap').remove();
+                });
+            }, delayTime);
+        }
+    }
+};

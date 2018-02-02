@@ -4,6 +4,7 @@ body {
 }
 
 /* 基础样式 */
+
 .flex-r {
 	display: flex;
 	flex-direction: row;
@@ -42,30 +43,39 @@ body {
 .mt10 {
 	margin-top: 10px;
 }
+
 .mt20 {
 	margin-top: 20px;
 }
+
 .mt30 {
 	margin-top: 30px;
 }
+
 .mt40 {
 	margin-top: 40px;
 }
+
 .mt50 {
 	margin-top: 50px;
 }
+
 .mt60 {
 	margin-top: 60px;
 }
+
 .mt70 {
 	margin-top: 70px;
 }
+
 .mt80 {
 	margin-top: 80px;
 }
+
 .mt90 {
 	margin-top: 90px;
 }
+
 .mt100 {
 	margin-top: 100px;
 }
@@ -81,44 +91,77 @@ body {
 
 .text-press {
 	color: transparent;
-	background-color : black;
-	text-shadow : rgba(255, 255, 255, 0.5) 0 1rem 2rem, rgba(255, 255, 255, 0.2) 1rem 3rem 3rem;
-	background-clip : text;
-	-webkit-background-clip : text;
+	background-color: black;
+	text-shadow: rgba(255, 255, 255, 0.5) 0 1rem 2rem, rgba(255, 255, 255, 0.2) 1rem 3rem 3rem;
+	background-clip: text;
+	-webkit-background-clip: text;
 }
 
 .letter-press {
 	color: transparent;
-	background-color : black;
-	text-shadow :  rgb(185, 185, 185) 0rem 0rem 0rem;
-	background-clip : text;
-	-webkit-background-clip : text;
+	background-color: black;
+	text-shadow: rgb(185, 185, 185) 0rem 0rem 0rem;
+	background-clip: text;
+	-webkit-background-clip: text;
 }
 
 .ripple {
 	position: relative;
-    overflow: hidden;
+	overflow: hidden;
 }
 
 .ripple:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    background-image: radial-gradient(circle, rgb(89, 238, 206) 10%, transparent 10.01%);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    transform: scale(10, 10);
-    opacity: 0;
-    transition: transform .3s, opacity .5s;
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	background-image: radial-gradient(circle, rgb(89, 238, 206) 10%, transparent 10.01%);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	transform: scale(10, 10);
+	opacity: 0;
+	transition: transform .3s, opacity .5s;
 }
 
 .ripple:active:after {
-    transform: scale(0, 0);
-    opacity: .3;
-    transition: 0s;
+	transform: scale(0, 0);
+	opacity: .3;
+	transition: 0s;
+}
+
+/************************************** 更改layer弹窗样式 **************************************/
+
+.layui-layer-dialog {
+	width: 84% !important;
+	min-width: 86% !important;
+	border-radius: 6px !important;
+}
+
+.layui-layer-dialog .layui-layer-title {
+	border-radius: 6px 6px 0 0 !important;
+	text-align: center !important;
+	padding: 10px 20px 0 20px !important;
+	font-size: 18px !important;
+	border-bottom: none !important;
+	background-color: #ffffff !important;
+}
+
+.layui-layer-dialog .layui-layer-setwin {
+	display: none !important;
+}
+
+.layui-layer-dialog .layui-layer-content {
+	padding: 0 20px 20px 20px !important;
+}
+
+.layui-layer-dialog .layui-layer-btn a {
+	border-color: rgb(235, 8, 8) !important;
+	background-color: rgb(235, 8, 8) !important;
+	width: calc(100% - 10px - 30px) !important;
+	text-align: center !important;
+	padding: 2px 15px !important;
 }

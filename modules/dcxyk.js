@@ -49,9 +49,73 @@ layui.define(['form', 'element'], function (exports) {
 			} else {
 				oAudio.pause();
 			}
+		} else if (clickWhere == 'activeRule') {
+			console.log('请在 modules > dcxyk.js : Line 53 添加 活动规则代码');
+		} else if (clickWhere == 'joinActive') {
+			layer.open({
+				title: '参加集卡活动',
+				shade: 0.9,
+				anim: 5,
+				move: false,
+				shadeClose: true,
+				btn: ['立即参加'],
+				type: 0,
+				content: `<div class="joinActivePhone"><input type="text" id="userPhone" placeholder="输入您的手机号"/></div><div class="joinActiveCode"><input type="text" id="userPhoneCode" placeholder="手机验证码"/><span class="ripple" onclick="getPhoneCode()">获取验证码</span></div>`,
+				yes: function (index, layero) {
+					var userPhone = $('#userPhone').val();
+					var userPhoneCode = $('#userPhoneCode').val();
+					if (userPhone && userPhoneCode && /^1[3|4|5|6|7|8][0-9]\d{8}$/.test(userPhone)) {
+						var loadingIndex = layer.load(2);
+						setTimeout(function () {
+							layer.close(loadingIndex);
+							layer.close(index);
+							joinActiveSuccess();
+						}, 2000);
+					} else {
+						if (!userPhone) {
+							new Toast('请输入您的手机号码').show();
+						} else if (!/^1[3|4|5|6|7|8][0-9]\d{8}$/.test(userPhone)) {
+							new Toast('请输入正确的手机号码').show();
+						} else if (!userPhoneCode) {
+							new Toast('请输入手机验证码').show();
+						}
+					}
+				}
+			});
 		}
 	});
 });
+
+// 获取手机验证码
+function getPhoneCode() {
+	var userPhone = $('#userPhone').val();
+	if (/^1[3|4|5|6|7|8][0-9]\d{8}$/.test(userPhone)) {
+		console.log('请在 modules > dcxyk.js : Line 93 添加 获取手机验证码代码');
+	} else {
+		new Toast('请输入正确的手机号码').show();
+	}
+}
+
+// 参加活动成功
+function joinActiveSuccess() {
+	$('div.contentTitleImg').hide();
+	$('div#joinActiveBtn').hide();
+	$('img.guizeImg').hide();
+	$('.pageItemWrap li.pageItem6 .content').css({
+		bottom: '0'
+	});
+	$('.pageItemWrap li.pageItem6 .content .logo').css({
+		bottom: '0'
+	});
+	$('.pageItemWrap li.pageItem6 div.content').animate({
+		scrollTop: 0
+	}, 400);
+	$('div.main_middle div.glueWrap').hide();
+	$('div.main_middle div.downloadAppWrap').show();
+	$('.pageItemWrap li.pageItem6 .content .mainContent').animate({
+		'margin-top': '-240px'
+	}, 400);
+}
 
 // 存放地区坐标
 var taiyuanPoint = [155, 240];

@@ -453,6 +453,14 @@ em.taiyuan::after {
 	padding-bottom: 60px;
 }
 
+.pageItemWrap li.pageItem6 .content .guizeImg {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	height: 42px;
+	z-index: 10;
+}
+
 .pageItemWrap li.pageItem6 .content .headImg {
 	position: relative;
 	width: 100%;
@@ -466,7 +474,19 @@ em.taiyuan::after {
 	height: auto !important;
 	font-size: 0px;
 	z-index: 2;
-	margin-top: -90px;
+	margin-top: -138px;
+}
+
+.pageItemWrap li.pageItem6 .content .mainContent .contentTitleImg {
+	width: 100%;
+	height: 80px;
+	position: absolute;
+	top: -80px;
+	text-align: center;
+}
+
+.pageItemWrap li.pageItem6 .content .mainContent .contentTitleImg img {
+	height: 90%;
 }
 
 .pageItemWrap li.pageItem6 .content .mainContent .main_top {
@@ -488,6 +508,20 @@ em.taiyuan::after {
 	font-size: 14px;
 }
 
+.pageItemWrap li.pageItem6 .content .mainContent .main_middle .downloadAppWrap {
+	text-align: center;
+	display: none;
+}
+
+.pageItemWrap li.pageItem6 .content .mainContent .main_middle .downloadAppWrap .downloadAppTitleIcon {
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.pageItemWrap li.pageItem6 .content .mainContent .main_middle .downloadAppWrap .downloadAppTitleIcon img {
+	height: 50px;
+}
+
 .pageItemWrap li.pageItem6 .content .logo {
 	position: fixed;
 	bottom: 50px;
@@ -499,10 +533,46 @@ em.taiyuan::after {
 
 .pageItemWrap li.pageItem6 .content .mainContent .main_middle .gl_item {
 	text-align: center;
+	color: #E71A29;
+	font-size: 14px;
+	padding-bottom: 40px;
 }
 
-.pageItemWrap li.pageItem6 .content .mainContent .main_middle .gl_item img {
+.pageItemWrap li.pageItem6 .content .mainContent .main_middle .gl_item img.title_icon {
 	height: 40px;
+	margin-bottom: 10px;
+}
+
+.pageItemWrap li.pageItem6 .content .mainContent .main_middle .gl_item .gl_title {
+	margin: 14px 0;
+}
+
+.pageItemWrap li.pageItem6 .content .mainContent .main_middle .gl_item .gl_content {
+	margin: 14px 0;
+	line-height: 34px;
+}
+
+.pageItemWrap li.pageItem6 .content .mainContent .main_middle .gl_item .stand {
+	font-size: 18px;
+}
+
+.pageItemWrap li.pageItem6 .content .mainContent .main_middle .gl_item .icon {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+}
+
+.pageItemWrap li.pageItem6 .content .mainContent .main_middle .gl_item .icon img {
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	height: 100%;
+}
+
+.pageItemWrap li.pageItem6 .content .mainContent .main_middle .gl_footer {
+	text-align: center;
+	color: rgb(141, 141, 141);
+	font-size: 12px;
 }
 
 .pageItemWrap li.pageItem6 .content .logo img {
@@ -519,4 +589,45 @@ em.taiyuan::after {
 	text-align: center;
 	background: #FDC857;
 	color: #fff;
+}
+
+/************************* 参加集卡表单 *************************/
+
+.joinActivePhone input {
+	width: calc(100% - 20px);
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 1px solid #c4c4c4;
+	padding: 6px 10px;
+	height: 30px;
+	font-size: 16px;
+}
+
+.joinActiveCode input {
+	width: calc(100% - 20px - 110px - 10px);
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 1px solid #c4c4c4;
+	padding: 6px 10px;
+	height: 30px;
+	font-size: 16px;
+}
+
+.joinActiveCode span {
+	display: inline-block;
+	width: 110px;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	margin-left: 10px;
+	background: rgb(238, 154, 159);
+	border-radius: 30px;
+	text-align: center;
+	color: rgb(41, 41, 41);
+	vertical-align: middle;
 }
